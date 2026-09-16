@@ -12,547 +12,490 @@
 
 <body>
 
-
-<!-- =========================
-     NAVIGATION
-========================= -->
-
 <header>
-
     <nav>
-
-        <div class="logo">
-            James Dwyer
-        </div>
+        <a href="/" class="logo">James Dwyer</a>
 
         <div class="nav-links">
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
         </div>
-
     </nav>
-
 </header>
 
 
 <main>
 
+    <!-- HERO -->
 
-<!-- =========================
-     HERO
-========================= -->
+    <section class="hero">
 
-<section class="hero">
+        <p class="eyebrow">
+            ELECTRICAL ENGINEERING PORTFOLIO
+        </p>
 
-    <p class="eyebrow">
-        ELECTRICAL ENGINEERING PORTFOLIO
-    </p>
+        <h1>
+            James Dwyer
+        </h1>
 
-    <h1>
-        James Dwyer
-    </h1>
+        <h2>
+            PCB Design · Embedded Systems · Robotics · Medical Devices · Hardware
+        </h2>
 
-    <h2>
-        PCB Design · Embedded Systems · Robotics · Medical Devices · Hardware
-    </h2>
+        <p class="hero-description">
+            Electrical Engineering student at Union College graduating in 2027
+            with experience in robotics, PCB design, medical device R&amp;D,
+            manufacturing, and hardware debugging.
+        </p>
 
-    <p class="hero-description">
-        Electrical Engineering student at Union College graduating in 2027
-        with experience in robotics, PCB design, medical device R&amp;D,
-        manufacturing, and hardware debugging.
-    </p>
+        <div class="hero-buttons">
 
-    <div class="hero-buttons">
+            <a href="#projects" class="button primary">
+                View Projects
+            </a>
 
-        <a
-            href="#projects"
-            class="button primary"
-        >
-            View Projects
-        </a>
-
-        <a
-            href="https://www.linkedin.com/in/jamespatrickdwyer/"
-            class="button secondary"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            LinkedIn
-        </a>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     PROJECTS
-========================= -->
-
-<section
-    id="projects"
-    class="projects-section"
->
-
-    <p class="section-label">
-        SELECTED WORK
-    </p>
-
-    <h2>
-        Projects
-    </h2>
-
-
-    <div class="project-grid">
-
-
-        <!-- MICROMOUSE -->
-
-        <article class="project-card featured">
-
-            <img
-                src="assets/micromouse-pcb-layout.png"
-                alt="Micromouse PCB layout"
+            <a
+                href="https://www.linkedin.com/in/jamespatrickdwyer/"
+                class="button secondary"
+                target="_blank"
+                rel="noopener noreferrer"
             >
+                LinkedIn
+            </a>
 
-            <div class="project-content">
+        </div>
 
-                <p class="project-number">
-                    01
-                </p>
+    </section>
 
-                <h3>
-                    Micromouse PCB &amp; Electrical System
-                </h3>
 
-                <p>
-                    Designed and tested a custom PCB for an autonomous
-                    Micromouse robot, integrating six IR sensors,
-                    motor encoders, motor control, and power distribution
-                    into a compact robotic platform.
-                </p>
+    <!-- PROJECTS -->
 
-                <div class="tags">
-                    <span>PCB Design</span>
-                    <span>EasyEDA</span>
-                    <span>Motor Control</span>
-                    <span>Sensors</span>
+    <section id="projects" class="projects-section">
+
+        <p class="section-label">
+            SELECTED WORK
+        </p>
+
+        <h2>
+            Projects
+        </h2>
+
+
+        <div class="project-grid">
+
+            <!-- MICROMOUSE -->
+
+            <article class="project-card featured">
+
+                <img
+                    src="assets/micromouse-pcb-layout.png"
+                    alt="Micromouse PCB layout"
+                >
+
+                <div class="project-content">
+
+                    <p class="project-number">
+                        01
+                    </p>
+
+                    <h3>
+                        Micromouse PCB &amp; Electrical System
+                    </h3>
+
+                    <p>
+                        Designed and tested a custom PCB for an autonomous
+                        Micromouse robot, integrating six IR sensors,
+                        motor encoders, motor control, and power distribution
+                        into a compact robotic platform.
+                    </p>
+
+                    <div class="tags">
+                        <span>PCB Design</span>
+                        <span>EasyEDA</span>
+                        <span>Motor Control</span>
+                        <span>Sensors</span>
+                    </div>
+
+                    <a
+                        href="micromouse-pcb/"
+                        class="project-link"
+                    >
+                        View Project →
+                    </a>
+
                 </div>
 
-                <a
-                    href="micromouse-pcb/" class="project-link"
-                    class="project-link"
+            </article>
+
+
+            <!-- CNC -->
+
+            <article class="project-card">
+
+                <img
+                    src="assets/cnc-control-system.png"
+                    alt="Three-axis CNC control system"
                 >
-                    Project View →
-                </a>
+
+                <div class="project-content">
+
+                    <p class="project-number">
+                        02
+                    </p>
+
+                    <h3>
+                        Three-Axis CNC Control System
+                    </h3>
+
+                    <p>
+                        Integrated an additional motor axis into an existing
+                        CNC platform, working across motor drivers,
+                        power distribution, control signals, safety circuitry,
+                        and machine-control software.
+                    </p>
+
+                    <div class="tags">
+                        <span>Motion Control</span>
+                        <span>Motor Drivers</span>
+                        <span>Mach4</span>
+                        <span>Debugging</span>
+                    </div>
+
+                    <a
+                        href="cnc-control-system/"
+                        class="project-link"
+                    >
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- TRASH COLLECTOR -->
+
+            <article class="project-card">
+
+                <img
+                    src="assets/robotic-trash-collector.png"
+                    alt="Autonomous robotic trash collector"
+                >
+
+                <div class="project-content">
+
+                    <p class="project-number">
+                        03
+                    </p>
+
+                    <h3>
+                        Autonomous Robotic Trash Collector
+                    </h3>
+
+                    <p>
+                        Built an Arduino-based autonomous robot using
+                        DC motors, motor drivers, ultrasonic sensing,
+                        embedded C++, and an ESP32 camera.
+                    </p>
+
+                    <div class="tags">
+                        <span>Arduino</span>
+                        <span>C++</span>
+                        <span>Motor Drivers</span>
+                        <span>ESP32</span>
+                    </div>
+
+                    <a
+                        href="https://dwyerjd.github.io/roboticTrash-collector/"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ELEVATOR -->
+
+            <article class="project-card">
+
+                <img
+                    src="assets/elevator-project.jpg"
+                    alt="STM32 elevator security system"
+                >
+
+                <div class="project-content">
+
+                    <p class="project-number">
+                        04
+                    </p>
+
+                    <h3>
+                        STM32 Elevator Security System
+                    </h3>
+
+                    <p>
+                        Developed an embedded access-control system integrating
+                        an STM32 microcontroller, keypad, LCD, motor driver,
+                        and motor-control hardware.
+                    </p>
+
+                    <div class="tags">
+                        <span>STM32</span>
+                        <span>C++</span>
+                        <span>Embedded Systems</span>
+                        <span>Motor Control</span>
+                    </div>
+
+                    <a
+                        href="https://dwyerjd.github.io/elevator-security/"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- FPGA -->
+
+            <article class="project-card">
+
+                <img
+                    src="assets/traffic-processor.jpg"
+                    alt="FPGA traffic control processor"
+                >
+
+                <div class="project-content">
+
+                    <p class="project-number">
+                        05
+                    </p>
+
+                    <h3>
+                        FPGA Traffic Control Processor
+                    </h3>
+
+                    <p>
+                        Designed a custom traffic-control processor using
+                        FPGA digital logic, finite-state machines,
+                        counters, comparators, and datapath architecture.
+                    </p>
+
+                    <div class="tags">
+                        <span>FPGA</span>
+                        <span>Quartus</span>
+                        <span>Digital Logic</span>
+                        <span>FSM</span>
+                    </div>
+
+                    <a
+                        href="https://dwyerjd.github.io/traffic-processor/"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+
+    <section id="experience" class="experience-section">
+
+        <p class="section-label">
+            EXPERIENCE
+        </p>
+
+        <h2>
+            Engineering Experience
+        </h2>
+
+
+        <!-- UNION ROBOTICS -->
+
+        <div class="experience-item">
+
+            <div class="experience-left">
+
+                <h3>
+                    Electrical Engineering Team Lead
+                </h3>
+
+                <p class="experience-company">
+                    Union College Robotics Crew
+                </p>
+
+                <p class="experience-date">
+                    Oct 2023 - Present
+                </p>
 
             </div>
 
-        </article>
-
-
-
-        <!-- CNC -->
-
-        <article class="project-card">
-
-            <img
-                src="assets/cnc-control-system.png"
-                alt="Three-axis CNC control system"
-            >
-
-            <div class="project-content">
-
-                <p class="project-number">
-                    02
-                </p>
-
-                <h3>
-                    Three-Axis CNC Control System
-                </h3>
-
-                <p>
-                    Integrated an additional motor axis into an existing
-                    CNC platform, working across motor drivers,
-                    power distribution, control signals, safety circuitry,
-                    and machine-control software.
-                </p>
-
-                <div class="tags">
-                    <span>Motion Control</span>
-                    <span>Motor Drivers</span>
-                    <span>Mach4</span>
-                    <span>Debugging</span>
-                </div>
-
-                <a
-                    href="cnc-control-system/"
-                    class="project-link"
-                >
-                    View Project →
-                </a>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- ROBOTIC TRASH COLLECTOR -->
-
-        <article class="project-card">
-
-            <img
-                src="assets/robotic-trash-collector.png"
-                alt="Autonomous robotic trash collector"
-            >
-
-            <div class="project-content">
-
-                <p class="project-number">
-                    03
-                </p>
-
-                <h3>
-                    Autonomous Robotic Trash Collector
-                </h3>
-
-                <p>
-                    Built an Arduino-based autonomous robot using
-                    DC motors, motor drivers, ultrasonic sensing,
-                    embedded C++, and an ESP32 camera.
-                </p>
-
-                <div class="tags">
-                    <span>Arduino</span>
-                    <span>C++</span>
-                    <span>Motor Drivers</span>
-                    <span>ESP32</span>
-                </div>
-
-                <a
-                    href="https://dwyerjd.github.io/roboticTrash-collector/"
-                    class="project-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View Project →
-                </a>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- ELEVATOR -->
-
-        <article class="project-card">
-
-            <img
-                src="assets/elevator-project.jpg"
-                alt="STM32 elevator security system"
-            >
-
-            <div class="project-content">
-
-                <p class="project-number">
-                    04
-                </p>
-
-                <h3>
-                    STM32 Elevator Security System
-                </h3>
-
-                <p>
-                    Developed an embedded access-control system integrating
-                    an STM32 microcontroller, keypad, LCD, motor driver,
-                    and motor-control hardware.
-                </p>
-
-                <div class="tags">
-                    <span>STM32</span>
-                    <span>C++</span>
-                    <span>Embedded Systems</span>
-                    <span>Motor Control</span>
-                </div>
-
-                <a
-                    href="https://dwyerjd.github.io/elevator-security/"
-                    class="project-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View Project →
-                </a>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- FPGA -->
-
-        <article class="project-card">
-
-            <img
-                src="assets/traffic-processor.jpg"
-                alt="FPGA traffic control processor"
-            >
-
-            <div class="project-content">
-
-                <p class="project-number">
-                    05
-                </p>
-
-                <h3>
-                    FPGA Traffic Control Processor
-                </h3>
-
-                <p>
-                    Designed a custom traffic-control processor using
-                    FPGA digital logic, finite-state machines,
-                    counters, comparators, and datapath architecture.
-                </p>
-
-                <div class="tags">
-                    <span>FPGA</span>
-                    <span>Quartus</span>
-                    <span>Digital Logic</span>
-                    <span>FSM</span>
-                </div>
-
-                <a
-                    href="https://dwyerjd.github.io/traffic-processor/"
-                    class="project-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View Project →
-                </a>
-
-            </div>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     EXPERIENCE
-========================= -->
-
-<section
-    id="experience"
-    class="experience-section"
->
-
-    <p class="section-label">
-        EXPERIENCE
-    </p>
-
-    <h2>
-        Engineering Experience
-    </h2>
-
-
-    <!-- UNION COLLEGE ROBOTICS -->
-
-    <div class="experience-item">
-
-        <div class="experience-left">
-
-            <h3>
-                Electrical Engineering Team Lead
-            </h3>
-
-            <p class="experience-company">
-                Union College Robotics Crew
-            </p>
-
-            <p class="experience-date">
-                Oct 2023 - Present
-            </p>
+            <ul class="experience-bullets">
+
+                <li>
+                    Design custom PCBs (KiCad, Altium) and integrate electrical subsystems,
+                    including power distribution, motor drivers, and sensor networks for autonomous robots.
+                </li>
+
+                <li>
+                    Collaborate with software and mechanical teams using Python and embedded C++
+                    for control algorithms and sensor integration in maze-navigating robots for the MIT
+                    Micromouse competition.
+                </li>
+
+            </ul>
 
         </div>
 
 
-        <ul class="experience-bullets">
+        <!-- FREE FLOW -->
 
-            <li>
-                Design custom PCBs (KiCad, Altium) and integrate electrical subsystems,
-                including power distribution, motor drivers, and sensor networks for autonomous robots.
-            </li>
+        <div class="experience-item">
 
-            <li>
-                Collaborate with software and mechanical teams using Python and embedded C++
-                for control algorithms and sensor integration in maze-navigating robots for the MIT
-                Micromouse competition.
-            </li>
+            <div class="experience-left">
 
-        </ul>
+                <h3>
+                    R&amp;D Manufacturing Engineering Intern
+                </h3>
 
-    </div>
+                <p class="experience-company">
+                    Free Flow Medical · Fremont, CA
+                </p>
 
+                <p class="experience-date">
+                    Jun 2026 - Sep 2026
+                </p>
 
+            </div>
 
-    <!-- FREE FLOW MEDICAL -->
+            <ul class="experience-bullets">
 
-    <div class="experience-item">
+                <li>
+                    Integrated a three-axis CNC control system with closed-loop stepper drives,
+                    power distribution, and relay safety circuitry.
+                </li>
 
-        <div class="experience-left">
+                <li>
+                    Developed and tested improvements to manufacturing processes, including contributing
+                    to a CNC machine control system to increase production efficiency and process consistency.
+                </li>
 
-            <h3>
-                R&amp;D Manufacturing Engineering Intern
-            </h3>
+                <li>
+                    Designed and iterated CAD models for custom tooling, fixtures, and manufacturing
+                    components used to support CNC machining and production processes.
+                </li>
 
-            <p class="experience-company">
-                Free Flow Medical · Fremont, CA
-            </p>
-
-            <p class="experience-date">
-                Jun 2026 - Sep 2026
-            </p>
-
-        </div>
-
-
-        <ul class="experience-bullets">
-
-            <li>
-                Integrated a three-axis CNC control system with closed-loop stepper drives,
-                power distribution, and relay safety circuitry.
-            </li>
-
-            <li>
-                Developed and tested improvements to manufacturing processes, including contributing
-                to a CNC machine control system to increase production efficiency and process consistency.
-            </li>
-
-            <li>
-                Designed and iterated CAD models for custom tooling, fixtures, and manufacturing
-                components used to support CNC machining and production processes.
-            </li>
-
-        </ul>
-
-    </div>
-
-
-
-    <!-- AVISI TECHNOLOGIES -->
-
-    <div class="experience-item">
-
-        <div class="experience-left">
-
-            <h3>
-                R&amp;D Intern
-            </h3>
-
-            <p class="experience-company">
-                Avisi Technologies · Redwood City, CA
-            </p>
-
-            <p class="experience-date">
-                Mar 2026 - May 2026
-            </p>
+            </ul>
 
         </div>
 
 
-        <ul class="experience-bullets">
+        <!-- AVISI -->
 
-            <li>
-                Conducted fluid flow simulations to analyze aqueous humor behavior under varying
-                occlusion conditions, supporting device performance evaluation and design decisions.
-            </li>
+        <div class="experience-item">
 
-            <li>
-                Prototyped a fiber optic camera system onto surgical forceps to enable real-time
-                internal visualization during procedures.
-            </li>
+            <div class="experience-left">
 
-            <li>
-                Performed mechanical simulations on the VisiPlate system to assess structural
-                integrity and optimize design for surgical application.
-            </li>
+                <h3>
+                    R&amp;D Intern
+                </h3>
 
-        </ul>
+                <p class="experience-company">
+                    Avisi Technologies · Redwood City, CA
+                </p>
 
-    </div>
+                <p class="experience-date">
+                    Mar 2026 - May 2026
+                </p>
 
+            </div>
 
-</section>
+            <ul class="experience-bullets">
 
+                <li>
+                    Conducted fluid flow simulations to analyze aqueous humor behavior under varying
+                    occlusion conditions, supporting device performance evaluation and design decisions.
+                </li>
 
+                <li>
+                    Prototyped a fiber optic camera system onto surgical forceps to enable real-time
+                    internal visualization during procedures.
+                </li>
 
-<!-- =========================
-     CONTACT
-========================= -->
+                <li>
+                    Performed mechanical simulations on the VisiPlate system to assess structural
+                    integrity and optimize design for surgical application.
+                </li>
 
-<section
-    id="contact"
-    class="contact-section"
->
+            </ul>
 
-    <p class="section-label">
-        CONTACT
-    </p>
+        </div>
 
-    <h2>
-        Let's Connect
-    </h2>
-
-    <p>
-        I'm currently studying Electrical Engineering at Union College
-        and graduating in June 2027.
-    </p>
+    </section>
 
 
-    <div class="contact-links">
+    <!-- CONTACT -->
 
-        <a href="mailto:DwyerJ@Union.edu">
-            DwyerJ@Union.edu
-        </a>
+    <section id="contact" class="contact-section">
 
-        <a
-            href="https://www.linkedin.com/in/jamespatrickdwyer/"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            LinkedIn
-        </a>
+        <p class="section-label">
+            CONTACT
+        </p>
 
-    </div>
+        <h2>
+            Let's Connect
+        </h2>
 
-</section>
+        <p>
+            I'm currently studying Electrical Engineering at Union College
+            and graduating in June 2027.
+        </p>
 
+        <div class="contact-links">
+
+            <a href="mailto:DwyerJ@Union.edu">
+                DwyerJ@Union.edu
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/jamespatrickdwyer/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LinkedIn
+            </a>
+
+        </div>
+
+    </section>
 
 </main>
 
 
-
-<!-- =========================
-     FOOTER
-========================= -->
-
 <footer>
-
     <p>
         James Dwyer · Electrical Engineering
     </p>
-
 </footer>
-
 
 </body>
 
