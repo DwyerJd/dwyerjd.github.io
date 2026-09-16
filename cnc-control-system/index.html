@@ -1,1 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CNC Control System | James Dwyer</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+<header>
+
+    <nav>
+
+        <a href="../" class="logo">
+            James Dwyer
+        </a>
+
+        <div class="nav-links">
+            <a href="../#projects">Projects</a>
+            <a href="../#experience">Experience</a>
+            <a href="../#contact">Contact</a>
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main class="project-page">
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="project-hero">
+
+        <a href="../#projects" class="back-link">
+            ← Back to Projects
+        </a>
+
+        <p class="eyebrow">
+            MOTION CONTROL &amp; HARDWARE INTEGRATION
+        </p>
+
+        <h1>
+            Three-Axis CNC Control System
+        </h1>
+
+        <p class="project-hero-description">
+            Integrated a third controlled motor axis into an existing CNC platform,
+            working across motor drivers, control signals, power distribution,
+            safety circuitry, machine-control software, and system calibration.
+        </p>
+
+        <div class="project-tags">
+
+            <span>Motion Control</span>
+            <span>Motor Drivers</span>
+            <span>Mach4</span>
+            <span>Electrical Debugging</span>
+            <span>Power Distribution</span>
+            <span>System Integration</span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         MAIN IMAGE
+    ========================== -->
+
+    <section class="project-feature-image">
+
+        <img
+            src="../assets/cnc-control-system.png"
+            alt="Three-axis CNC control system"
+        >
+
+        <p class="image-caption">
+            CNC control hardware used to integrate and test the additional motor axis.
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         OVERVIEW
+    ========================== -->
+
+    <section class="project-detail-section">
+
+        <p class="section-label">
+            OVERVIEW
+        </p>
+
+        <div class="project-section-grid">
+
+            <h2>
+                Expanding an existing machine from two controlled axes to three
+            </h2>
+
+            <div class="project-section-copy">
+
+                <p>
+                    During my manufacturing engineering internship at Free Flow Medical,
+                    I worked on upgrading an existing CNC system that was originally
+                    configured for two controlled axes.
+                </p>
+
+                <p>
+                    The goal was to integrate an additional motor and closed-loop
+                    stepper drive while maintaining reliable operation of the existing
+                    machine. The project required changes across the electrical system,
+                    motion controller configuration, software setup, and motor tuning.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SYSTEM ARCHITECTURE
+    ========================== -->
+
+    <section class="project-detail-section">
+
+        <p class="section-label">
+            SYSTEM ARCHITECTURE
+        </p>
+
+        <div class="project-section-grid">
+
+            <h2>
+                Connecting motion software to physical motor control
+            </h2>
+
+            <div class="project-section-copy">
+
+                <p>
+                    The machine used Mach4 control software with a UC100 motion
+                    controller and breakout hardware to convert software motion
+                    commands into pulse and direction signals for the motor drives.
+                </p>
+
+                <p>
+                    The additional axis required integrating a new closed-loop stepper
+                    motor and driver, assigning control signals, connecting power,
+                    configuring the axis in Mach4, and tuning the motor so software
+                    commands produced accurate physical motion.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="project-wide-image">
+
+            <img
+                src="../assets/cnc-control-system-schematic.png"
+                alt="CNC control system electrical schematic"
+            >
+
+            <p class="image-caption">
+                Electrical and control-system schematic used during the CNC integration project.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CHALLENGE
+    ========================== -->
+
+    <section class="project-detail-section">
+
+        <p class="section-label">
+            THE CHALLENGE
+        </p>
+
+        <div class="project-section-grid">
+
+            <h2>
+                The problem crossed both hardware and software
+            </h2>
+
+            <div class="project-section-copy">
+
+                <p>
+                    When the new motor initially failed to respond correctly, there
+                    was no single obvious failure point. The problem could have been
+                    caused by the driver wiring, breakout-board pin assignments,
+                    motion-controller configuration, Mach4 profile, or motor tuning.
+                </p>
+
+                <p>
+                    Instead of changing several variables at once, I broke the system
+                    into smaller sections and verified each stage independently.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         DEBUGGING PROCESS
+    ========================== -->
+
+    <section class="project-detail-section">
+
+        <p class="section-label">
+            DEBUGGING PROCESS
+        </p>
+
+        <h2 class="process-title">
+            Working from electrical signals up to full machine motion
+        </h2>
+
+
+        <div class="process-grid">
+
+
+            <div class="process-card">
+
+                <p class="process-number">
+                    01
+                </p>
+
+                <h3>
+                    Verify Power
+                </h3>
+
+                <p>
+                    Confirmed the motor driver and power supply were operating
+                    correctly before troubleshooting the control signals.
+                </p>
+
+            </div>
+
+
+
+            <div class="process-card">
+
+                <p class="process-number">
+                    02
+                </p>
+
+                <h3>
+                    Check Signal Wiring
+                </h3>
+
+                <p>
+                    Used a multimeter to validate ground connections and monitor
+                    direction-signal changes while jogging the axis through Mach4.
+                </p>
+
+            </div>
+
+
+
+            <div class="process-card">
+
+                <p class="process-number">
+                    03
+                </p>
+
+                <h3>
+                    Validate I/O Mapping
+                </h3>
+
+                <p>
+                    Tested breakout-board pin assignments and confirmed that the
+                    software configuration matched the physical wiring.
+                </p>
+
+            </div>
+
+
+
+            <div class="process-card">
+
+                <p class="process-number">
+                    04
+                </p>
+
+                <h3>
+                    Configure Motion Software
+                </h3>
+
+                <p>
+                    Created and configured a Mach4 machine profile that supported
+                    the additional axis and ensured the UC100 motion-controller
+                    plugin was operating correctly.
+                </p>
+
+            </div>
+
+
+
+            <div class="process-card">
+
+                <p class="process-number">
+                    05
+                </p>
+
+                <h3>
+                    Tune the Motor
+                </h3>
+
+                <p>
+                    Adjusted motor velocity, acceleration, and motion parameters
+                    until the new axis moved smoothly rather than producing
+                    inconsistent or jerky motion.
+                </p>
+
+            </div>
+
+
+
+            <div class="process-card">
+
+                <p class="process-number">
+                    06
+                </p>
+
+                <h3>
+                    Calibrate Motion
+                </h3>
+
+                <p>
+                    Compared commanded movement with actual shaft rotation and
+                    adjusted the axis calibration until requested angular movement
+                    matched the physical output.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SIGNAL VALIDATION
+    ========================== -->
+
+    <section class="project-detail-section">
+
+        <p class="section-label">
+            SIGNAL VALIDATION
+        </p>
+
+        <div class="project-section-grid">
+
+            <h2>
+                Using measurements instead of guessing
+            </h2>
+
+            <div class="project-section-copy">
+
+                <p>
+                    A key part of the troubleshooting process was verifying that
+                    the motion controller was actually generating electrical
+                    signals before assuming the motor or driver was faulty.
+                </p>
+
+                <p>
+                    I used a multimeter to monitor the direction output while
+                    jogging the machine and verified the signal changed between
+                    approximately 0 V and 5 V depending on commanded direction.
+                    This helped confirm that the software and motion controller
+                    were communicating with the breakout board.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SAFETY & POWER
+    ========================== -->
+
+    <section class="project-detail-section">
+
+        <p class="section-label">
+            POWER &amp; SAFETY
+        </p>
+
+        <div class="project-section-grid">
+
+            <h2>
+                Integrating the motor into the machine's power system
+            </h2>
+
+            <div class="project-section-copy">
+
+                <p>
+                    The motor integration also required working with the machine's
+                    power and safety circuitry. I helped incorporate power distribution,
+                    a circuit breaker, emergency-stop functionality, switching, and
+                    relay-based safety control into the system.
+                </p>
+
+                <p>
+                    Each stage was tested individually before the complete chain was
+                    operated together, reducing the risk of troubleshooting several
+                    unknowns at the same time.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         RESULT
+    ========================== -->
+
+    <section class="project-detail-section project-result">
+
+        <p class="section-label">
+            FINAL RESULT
+        </p>
+
+        <div class="project-section-grid">
+
+            <h2>
+                Reliable three-axis operation with calibrated rotary motion
+            </h2>
+
+            <div class="project-section-copy">
+
+                <p>
+                    After working through the wiring, controller configuration,
+                    software profile, and motor tuning, the additional axis operated
+                    reliably alongside the machine's existing axes.
+                </p>
+
+                <p>
+                    The rotary axis was calibrated so programmed angular commands
+                    produced corresponding physical shaft movement, allowing the
+                    machine to accept coordinated motion commands through Mach4.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         KEY TAKEAWAYS
+    ========================== -->
+
+    <section class="project-detail-section">
+
+        <p class="section-label">
+            KEY TAKEAWAYS
+        </p>
+
+        <div class="project-section-grid">
+
+            <h2>
+                Debugging the complete system
+            </h2>
+
+            <div class="project-section-copy">
+
+                <p>
+                    The biggest lesson from this project was learning to troubleshoot
+                    across electrical hardware, control electronics, and software
+                    configuration instead of treating them as separate systems.
+                </p>
+
+                <p>
+                    Breaking the problem into measurable stages made it possible to
+                    isolate faults efficiently and distinguish wiring problems from
+                    configuration or tuning problems.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         NEXT PROJECT
+    ========================== -->
+
+    <section class="next-project-section">
+
+        <p class="section-label">
+            MORE PROJECTS
+        </p>
+
+        <a href="../#projects">
+
+            <h2>
+                View All Projects →
+            </h2>
+
+        </a>
+
+    </section>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        James Dwyer · Electrical Engineering
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
