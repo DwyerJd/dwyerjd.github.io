@@ -38,7 +38,6 @@ img {
 }
 
 
-
 /* =========================
    NAVIGATION
 ========================= */
@@ -46,10 +45,9 @@ img {
 header {
     position: sticky;
     top: 0;
-
     z-index: 100;
 
-    background: rgba(11, 15, 20, 0.95);
+    background: rgba(11, 15, 20, 0.96);
 
     border-bottom: 1px solid #232a32;
 }
@@ -90,7 +88,6 @@ nav {
 }
 
 
-
 /* =========================
    GENERAL LAYOUT
 ========================= */
@@ -121,7 +118,6 @@ section {
 }
 
 
-
 /* =========================
    HERO
 ========================= */
@@ -134,7 +130,7 @@ section {
 
     justify-content: center;
 
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .hero h1 {
@@ -154,13 +150,15 @@ section {
 
     font-weight: 500;
 
+    line-height: 1.4;
+
     margin-bottom: 26px;
 }
 
 .hero-description {
     color: #9ca7b4;
 
-    max-width: 690px;
+    max-width: 700px;
 
     font-size: 18px;
 }
@@ -215,7 +213,6 @@ section {
 }
 
 
-
 /* =========================
    SECTION HEADINGS
 ========================= */
@@ -229,7 +226,6 @@ section {
 
     margin-bottom: 40px;
 }
-
 
 
 /* =========================
@@ -357,7 +353,6 @@ section {
 }
 
 
-
 /* =========================
    EXPERIENCE
 ========================= */
@@ -369,11 +364,11 @@ section {
 .experience-item {
     display: grid;
 
-    grid-template-columns: 0.75fr 1.5fr;
+    grid-template-columns: 0.8fr 1.5fr;
 
     gap: 60px;
 
-    padding: 34px 0;
+    padding: 36px 0;
 
     border-top: 1px solid #232a32;
 }
@@ -382,52 +377,43 @@ section {
     border-bottom: 1px solid #232a32;
 }
 
-.experience-heading h3 {
+.experience-left h3 {
     font-size: 20px;
 
-    margin-bottom: 5px;
+    line-height: 1.35;
+
+    margin-bottom: 6px;
 }
 
-.experience-role {
+.experience-company {
     color: #c2cad3;
 
-    font-size: 14px;
+    font-size: 15px;
 
-    font-weight: 500;
-}
-
-.experience-location {
-    color: #818b96;
-
-    font-size: 13px;
-
-    margin-top: 4px;
+    margin-bottom: 7px;
 }
 
 .experience-date {
-    color: #687583;
+    color: #727e8a;
 
     font-size: 13px;
-
-    margin-top: 8px;
 }
 
-.experience-item ul {
+.experience-bullets {
+    color: #aab4bf;
+
     padding-left: 20px;
-
-    color: #9ca7b4;
 }
 
-.experience-item li {
+.experience-bullets li {
     margin-bottom: 12px;
 
     padding-left: 3px;
 }
 
-.experience-item li:last-child {
+.experience-bullets li:last-child {
     margin-bottom: 0;
 }
-
 
 
 /* =========================
@@ -469,7 +455,6 @@ section {
 }
 
 
-
 /* =========================
    FOOTER
 ========================= */
@@ -485,7 +470,6 @@ footer {
 
     text-align: center;
 }
-
 
 
 /* =========================
@@ -538,11 +522,7 @@ footer {
     .experience-item {
         grid-template-columns: 1fr;
 
-        gap: 20px;
-    }
-
-    .nav-links a:nth-child(2) {
-        display: none;
+        gap: 22px;
     }
 
     .projects-section > h2,
@@ -552,7 +532,6 @@ footer {
     }
 
 }
-
 
 
 /* =========================
@@ -578,7 +557,7 @@ footer {
     }
 
     .hero h2 {
-        line-height: 1.4;
+        line-height: 1.45;
     }
 
     .project-content {
