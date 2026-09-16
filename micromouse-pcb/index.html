@@ -35,7 +35,9 @@
 <main class="project-page">
 
 
-    <!-- HERO -->
+    <!-- =========================
+         HERO
+    ========================== -->
 
     <section class="project-hero">
 
@@ -58,19 +60,23 @@
         </p>
 
         <div class="project-tags">
+
             <span>PCB Design</span>
             <span>EasyEDA</span>
             <span>Motor Control</span>
             <span>IR Sensors</span>
             <span>Encoders</span>
             <span>Electrical Testing</span>
+
         </div>
 
     </section>
 
 
 
-    <!-- MAIN PCB IMAGE -->
+    <!-- =========================
+         PCB LAYOUT
+    ========================== -->
 
     <section class="project-feature-image">
 
@@ -80,15 +86,17 @@
         >
 
         <p class="image-caption">
-            PCB layout showing the six forward-facing IR sensor positions,
-            motor controller, motor connections, and routing.
+            PCB layout showing the six IR sensor positions, motor controller,
+            motor connections, and electrical routing.
         </p>
 
     </section>
 
 
 
-    <!-- OVERVIEW -->
+    <!-- =========================
+         OVERVIEW
+    ========================== -->
 
     <section class="project-detail-section">
 
@@ -99,23 +107,23 @@
         <div class="project-section-grid">
 
             <h2>
-                Building the electrical system into the robot itself
+                Replacing a breadboard-based robot with an integrated PCB
             </h2>
 
             <div class="project-section-copy">
 
                 <p>
-                    Earlier Union College Micromouse robots relied on breadboards,
-                    loose wiring, and larger stacked components. This made the robots
-                    heavier, harder to troubleshoot, and more susceptible to electrical
-                    connection problems during motion.
+                    Previous Union College Micromouse robots relied on breadboards,
+                    loose wiring, and larger stacked components. The wiring made the
+                    robots harder to troubleshoot and introduced connection problems
+                    as the robot moved through the maze.
                 </p>
 
                 <p>
                     I designed a custom PCB that served as both the electrical platform
                     and part of the robot's mechanical structure. The goal was to reduce
-                    wiring, lower the overall size and weight, improve reliability,
-                    and make future debugging easier.
+                    wiring, decrease the size and weight of the system, improve reliability,
+                    and create a platform that was easier to test and debug.
                 </p>
 
             </div>
@@ -126,7 +134,9 @@
 
 
 
-    <!-- SYSTEM ARCHITECTURE -->
+    <!-- =========================
+         SYSTEM ARCHITECTURE
+    ========================== -->
 
     <section class="project-detail-section">
 
@@ -137,21 +147,22 @@
         <div class="project-section-grid">
 
             <h2>
-                Sensors, motor feedback, and control
+                Sensor feedback, motor control, and power distribution
             </h2>
 
             <div class="project-section-copy">
 
                 <p>
-                    The system uses six IR distance sensors positioned around the front
-                    of the robot to measure nearby maze walls. Two motor encoders provide
-                    feedback on motor speed and direction.
+                    Six IR distance sensors are positioned around the front of the
+                    robot to measure the surrounding maze walls. Two motor encoders
+                    provide feedback on the speed and direction of the drive motors.
                 </p>
 
                 <p>
-                    The microcontroller receives the sensor and encoder inputs and
-                    commands the motor controller, which supplies the current required
-                    by the two drive motors.
+                    The microcontroller receives the sensor and encoder data and uses
+                    those inputs to control the two motors through the motor driver.
+                    Separate power connections were incorporated for the controller
+                    and drive system.
                 </p>
 
             </div>
@@ -167,8 +178,8 @@
             >
 
             <p class="image-caption">
-                Electrical schematic connecting the microcontroller, motor controller,
-                IR sensors, motor encoders, switches, and power input.
+                Electrical schematic connecting the controller, six IR sensors,
+                motor encoders, motor driver, switches, and power input.
             </p>
 
         </div>
@@ -177,7 +188,9 @@
 
 
 
-    <!-- DESIGN PROCESS -->
+    <!-- =========================
+         DESIGN PROCESS
+    ========================== -->
 
     <section class="project-detail-section">
 
@@ -192,6 +205,7 @@
 
         <div class="process-grid">
 
+
             <div class="process-card">
 
                 <p class="process-number">
@@ -199,16 +213,17 @@
                 </p>
 
                 <h3>
-                    Component Placement
+                    Sensor Placement
                 </h3>
 
                 <p>
-                    Positioned six IR sensors around the front of the PCB while
-                    balancing sensor range, routing space, motor placement, and
-                    the board's physical size.
+                    Positioned six IR sensors across the front of the PCB,
+                    including forward, side, and 45-degree sensing positions,
+                    while maintaining space for routing and mechanical components.
                 </p>
 
             </div>
+
 
 
             <div class="process-card">
@@ -218,16 +233,17 @@
                 </p>
 
                 <h3>
-                    Motor &amp; Weight Placement
+                    Motor Placement
                 </h3>
 
                 <p>
-                    Moved the motors toward the center of the PCB in later revisions
-                    to improve balance and shift the robot's axis of rotation closer
-                    to its center.
+                    Moved the drive motors toward the center of the board in later
+                    revisions to improve balance and place the robot's axis of
+                    rotation closer to its center.
                 </p>
 
             </div>
+
 
 
             <div class="process-card">
@@ -241,12 +257,13 @@
                 </h3>
 
                 <p>
-                    Reworked the original four-layer approach by introducing power
-                    and ground planes, allowing the final PCB to use a simpler
-                    two-layer architecture.
+                    Introduced dedicated power and ground planes to simplify routing.
+                    This allowed the design to move from an initial four-layer concept
+                    to a two-layer PCB.
                 </p>
 
             </div>
+
 
 
             <div class="process-card">
@@ -260,12 +277,13 @@
                 </h3>
 
                 <p>
-                    Considered component current requirements, trace widths,
-                    conductor spacing, routing density, and manufacturing constraints
-                    while developing the board.
+                    Considered current requirements, conductor spacing, trace width,
+                    component footprints, routing density, and manufacturing limitations
+                    throughout the PCB design.
                 </p>
 
             </div>
+
 
         </div>
 
@@ -273,7 +291,9 @@
 
 
 
-    <!-- ITERATION -->
+    <!-- =========================
+         ITERATION
+    ========================== -->
 
     <section class="project-detail-section">
 
@@ -290,17 +310,16 @@
             <div class="project-section-copy">
 
                 <p>
-                    The project went through three PCB iterations. The second revision
-                    exposed several issues, including a missing motor connection,
-                    shorted encoder pins, insufficient clearance for the motor mounts,
-                    and incomplete silkscreen markings.
+                    The PCB went through three design iterations. Each revision was
+                    manufactured or evaluated, tested, and used to identify improvements
+                    for the next version.
                 </p>
 
                 <p>
-                    I used those failures to revise the design before manufacturing the
-                    third version. The final revision corrected the electrical
-                    connections, improved mechanical clearances, and added clearer
-                    silkscreen markings to make assembly and troubleshooting easier.
+                    The second revision revealed several important issues, including
+                    a missing motor connection, shorted encoder pins, insufficient
+                    clearance for motor mounts, and incomplete silkscreen markings.
+                    These problems were corrected in the final design.
                 </p>
 
             </div>
@@ -310,39 +329,71 @@
 
         <div class="iteration-flow">
 
+
             <div>
-                <span>REV 1</span>
-                <strong>Initial PCB</strong>
+
+                <span>
+                    REV 1
+                </span>
+
+                <strong>
+                    Initial PCB
+                </strong>
+
                 <p>
-                    Established component placement, routing, and board geometry.
+                    Established the original component placement, routing,
+                    board geometry, and electrical architecture.
                 </p>
+
             </div>
+
 
             <div class="iteration-arrow">
                 →
             </div>
 
+
             <div>
-                <span>REV 2</span>
-                <strong>Mechanical + Electrical Redesign</strong>
+
+                <span>
+                    REV 2
+                </span>
+
+                <strong>
+                    Electrical &amp; Mechanical Redesign
+                </strong>
+
                 <p>
-                    Centralized motors, added power and ground planes, and simplified
-                    the board architecture.
+                    Centralized the motors, removed the secondary PCB,
+                    introduced power and ground planes, and simplified the
+                    board architecture.
                 </p>
+
             </div>
+
 
             <div class="iteration-arrow">
                 →
             </div>
 
+
             <div>
-                <span>REV 3</span>
-                <strong>Final Validated Design</strong>
+
+                <span>
+                    REV 3
+                </span>
+
+                <strong>
+                    Final Validated Design
+                </strong>
+
                 <p>
-                    Corrected electrical faults, improved mounting clearance, and
-                    finalized the PCB for full assembly and testing.
+                    Corrected electrical faults, improved motor-mount clearance,
+                    refined sensor placement, and added clearer silkscreen markings.
                 </p>
+
             </div>
+
 
         </div>
 
@@ -350,7 +401,9 @@
 
 
 
-    <!-- TESTING -->
+    <!-- =========================
+         TESTING
+    ========================== -->
 
     <section class="project-detail-section">
 
@@ -359,11 +412,12 @@
         </p>
 
         <h2 class="process-title">
-            Validating the design before and after assembly
+            Validating the board before and after assembly
         </h2>
 
 
         <div class="validation-grid">
+
 
             <div class="validation-item">
 
@@ -372,11 +426,12 @@
                 </h3>
 
                 <p>
-                    Used PCB design-rule checks before fabrication to identify
-                    violations involving routing, spacing, and electrical connections.
+                    Used PCB design-rule checks before fabrication to verify
+                    electrical connections, trace widths, and conductor spacing.
                 </p>
 
             </div>
+
 
 
             <div class="validation-item">
@@ -386,11 +441,13 @@
                 </h3>
 
                 <p>
-                    Cross-referenced PCB connections against the schematic and used
-                    a digital multimeter to verify continuity before and after soldering.
+                    Cross-referenced PCB connections against the schematic and
+                    used a digital multimeter to verify continuity before and
+                    after component soldering.
                 </p>
 
             </div>
+
 
 
             <div class="validation-item">
@@ -400,11 +457,13 @@
                 </h3>
 
                 <p>
-                    Tested each sensor against maze walls and plotted analog responses
-                    to verify changes in distance were being transmitted correctly.
+                    Tested the sensors against maze walls and plotted their
+                    analog responses to verify that changes in wall distance
+                    were being measured correctly.
                 </p>
 
             </div>
+
 
 
             <div class="validation-item">
@@ -414,11 +473,13 @@
                 </h3>
 
                 <p>
-                    Monitored encoder feedback while varying motor speed and used
-                    oscilloscope-based troubleshooting for motor and encoder signals.
+                    Monitored encoder feedback while changing motor speed and
+                    used oscilloscope-based troubleshooting when investigating
+                    motor and encoder signals.
                 </p>
 
             </div>
+
 
         </div>
 
@@ -426,32 +487,92 @@
 
 
 
-    <!-- RESULT -->
+    <!-- =========================
+         FINAL RESULT
+    ========================== -->
 
     <section class="project-detail-section project-result">
 
         <p class="section-label">
-            RESULT
+            FINAL RESULT
         </p>
 
         <div class="project-section-grid">
 
             <h2>
-                A smaller, cleaner, and more reliable Micromouse platform
+                From PCB design to an assembled robotic platform
             </h2>
 
             <div class="project-section-copy">
 
                 <p>
-                    The final PCB passed continuity testing and successfully supported
-                    the IR sensors, motor encoders, motor controller, and microcontroller.
+                    The final PCB passed continuity testing and successfully
+                    integrated the IR sensors, motor encoders, motor controller,
+                    microcontroller, drive motors, and supporting mechanical components.
                 </p>
 
                 <p>
-                    Moving from loose breadboard wiring to an integrated PCB reduced
+                    Replacing the previous breadboard-based architecture reduced
                     wiring clutter, improved debugging access, lowered the physical
-                    profile of the robot, and created a platform that could continue
-                    to be used by future members of the robotics team.
+                    profile of the robot, and created a more durable platform for
+                    continued development by the robotics team.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FINAL ASSEMBLED ROBOT IMAGE -->
+
+        <div class="project-wide-image">
+
+            <img
+                src="../assets/micromouse-final-assembled.png"
+                alt="Final assembled Micromouse robot"
+            >
+
+            <p class="image-caption">
+                Final assembled Micromouse showing the custom PCB integrated
+                with the IR sensors, drive motors, wheels, motor controller,
+                microcontroller, and mechanical supports.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         KEY TAKEAWAYS
+    ========================== -->
+
+    <section class="project-detail-section">
+
+        <p class="section-label">
+            KEY TAKEAWAYS
+        </p>
+
+        <div class="project-section-grid">
+
+            <h2>
+                What I learned
+            </h2>
+
+            <div class="project-section-copy">
+
+                <p>
+                    This project gave me experience taking a PCB from system-level
+                    requirements through schematic development, layout, fabrication,
+                    assembly, testing, and multiple design revisions.
+                </p>
+
+                <p>
+                    It also reinforced how closely electrical and mechanical decisions
+                    interact in a robotic system. Component placement affected routing,
+                    sensing performance, balance, turning behavior, assembly, and
+                    accessibility during debugging.
                 </p>
 
             </div>
@@ -462,7 +583,9 @@
 
 
 
-    <!-- NEXT PROJECT -->
+    <!-- =========================
+         NEXT PROJECT
+    ========================== -->
 
     <section class="next-project-section">
 
@@ -471,15 +594,18 @@
         </p>
 
         <a href="../#projects">
+
             <h2>
                 Three-Axis CNC Control System →
             </h2>
+
         </a>
 
     </section>
 
 
 </main>
+
 
 
 <footer>
