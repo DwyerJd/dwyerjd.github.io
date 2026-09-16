@@ -395,3 +395,22 @@ footer {
         display: none;
     }
 }
+
+.experience-item ul {
+    color: #9ca7b4;
+    padding-left: 20px;
+}
+
+.experience-item li {
+    margin-bottom: 10px;
+}
+
+.experience-item div p {
+    margin-top: 3px;
+}
+
+.experience-item div p:last-child {
+    color: #687583;
+    font-size: 13px;
+    margin-top: 8px;
+}
